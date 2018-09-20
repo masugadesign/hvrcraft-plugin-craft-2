@@ -103,7 +103,7 @@ class HvrcraftService extends BaseApplicationComponent
 			]);
 			$body = (string)$response->getBody();
 		} catch (Exception $e) {
-			//exit("ERROR REQUESTING : {$baseUrl}api/wake-up?key={$siteKey}");
+			HvrcraftPlugin::log($e->getMessage(), LogLevel::Error);
 		}
 	}
 
