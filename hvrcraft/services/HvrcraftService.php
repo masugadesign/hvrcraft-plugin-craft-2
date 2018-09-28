@@ -38,7 +38,8 @@ class HvrcraftService extends BaseApplicationComponent
 		$updates = craft()->updates->getUpdates();
 		$cleaned = [
 			'cms' => [
-				'version' => craft()->getVersion()
+				'version' => craft()->getVersion(),
+				'edition' => craft()->getEdition()
 			]
 		];
 		// Check for a CMS update.
