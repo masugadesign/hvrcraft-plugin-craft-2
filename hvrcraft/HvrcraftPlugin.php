@@ -12,7 +12,7 @@ class HvrcraftPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-		return '2.0.0-beta.2';
+		return '2.0.0-beta.3';
 	}
 
 	public function getSchemaVersion()
@@ -37,7 +37,7 @@ class HvrcraftPlugin extends BasePlugin
 
 	public function getReleaseFeedUrl()
 	{
-		return 'https://hvrcraft.com/craft-2-plugin-releases';
+		return 'https://www.hvrcraft.com/craft-2-plugin-releases';
 	}
 
 	public function defineSettings()
