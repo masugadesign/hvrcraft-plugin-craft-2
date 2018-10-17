@@ -12,7 +12,7 @@ class HvrcraftPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-		return '2.0.0-beta.3';
+		return '2.0.0-beta.4';
 	}
 
 	public function getSchemaVersion()

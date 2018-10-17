@@ -57,7 +57,7 @@ class HvrcraftService extends BaseApplicationComponent
 		// Clean up any plugin updates.
 		if ( isset($updates->plugins) ) {
 			foreach($updates->plugins as $index => $updateInfo) {
-				$latestPluginUpdate = $updateInfo->releases[0] ?? null;
+				$latestPluginUpdate = isset($updateInfo->releases[0]) ? $updateInfo->releases[0] : null;
 				if ( $latestPluginUpdate ) {
 					$cleaned[$updateInfo->displayName] = [
 						'version' => $latestPluginUpdate->version,
