@@ -12,7 +12,7 @@ class HvrcraftPlugin extends BasePlugin
 
 	public function getVersion()
 	{
-		return '2.0.0-beta.4';
+		return '2.0.0-beta.5';
 	}
 
 	public function getSchemaVersion()
@@ -73,7 +73,6 @@ class HvrcraftPlugin extends BasePlugin
 		craft()->on('updates.onEndUpdate', function(Event $event) {
 			craft()->hvrcraft->wakeupHvrcraft();
 		});
-		craft()->hvrcraft->getAvailableUpdates();
 	}
 
 }
